@@ -1,0 +1,247 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4edd8;
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+  height: 75vh;
+  background-image: url("/images/pic39.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Navbar */
+.nav-bar {
+  height: 120px;
+  width: 100%;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 36px;
+  font-family: Cambria, serif;
+}
+
+.nav-op a {
+  color: white;
+  margin-right: 25px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-op a:hover {
+  color: #f4b544;
+}
+
+/* Reservation Button */
+.Reservation {
+  background-color: #084603;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.Reservation:hover {
+  background-color: #042b00;
+}
+
+.Reservation a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Heading */
+.heading {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.heading h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Quote Section */
+.quote {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quote i {
+  font-size: 60px;
+  color: #084603;
+}
+
+.quote h4 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #022103;
+}
+
+.quote p {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Story Section */
+.story-sec {
+  padding: 80px 12%;
+  background-color: #ceebb0;
+  text-align: center;
+}
+
+.story-sec h3 {
+  font-size: 28px;
+  color: #063302;
+}
+
+.story-sec h1 {
+  font-size: 38px;
+  margin: 10px 0 20px;
+  color: #000;
+  font-weight: 700;
+}
+
+.story-sec p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Our Story Section Image + Text Side by Side */
+.our-story {
+  display: flex;
+  padding: 80px 8%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ceebb0;
+  gap: 40px;
+}
+
+.our-story img {
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.magic-sec {
+  width: 50%;
+}
+
+.magic-sec h4 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.magic-sec p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #032001;
+  color: white;
+  padding: 60px 5% 30px;
+}
+
+.logo-last {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-last img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.logo-last h1 {
+  font-size: 38px;
+  margin-top: 10px;
+}
+
+.logo-last span {
+  font-size: 20px;
+  color: #d1cfcf;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.footer-container p,
+.footer-container a {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-container a:hover {
+  color: #f4b544;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  padding-top: 15px;
+  border-top: 1px solid #4e614f;
+}

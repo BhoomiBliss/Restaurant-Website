@@ -1,0 +1,85 @@
+/* Navbar Container */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff; /* Change to match your site theme */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Section */
+.nav-bar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-bar .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-bar .logo h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Links */
+.nav-bar .nav-op {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-bar .nav-op a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-bar .nav-op a:hover {
+  color: #e63946; /* Highlight color on hover */
+}
+
+/* Active NavLink */
+.nav-bar .nav-op .active {
+  border-bottom: 2px solid #e63946; /* Shows underline for active page */
+}
+
+/* Reservation Button */
+.nav-bar .reservation-btn {
+  background-color: #f4d03f; /* Yellow button */
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.nav-bar .reservation-btn:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar .nav-op {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
