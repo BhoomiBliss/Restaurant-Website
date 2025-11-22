@@ -1,16 +1,65 @@
-# React + Vite
+Jyothi Restaurant Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive restaurant website built with React and Vite. This project showcases the restaurant’s Home, About, Menu, Gallery, Events, and Reservation pages with interactive components and clean styling.
 
-Currently, two official plugins are available:
+Project Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive React + Vite project setup
 
-## React Compiler
+Navbar for navigation across all pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Footer with logo, quick links, contact info, and social links
 
-## Expanding the ESLint configuration
+Home page with hero section and about info
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Menu page with menu items and images
+
+Gallery page with image grid and lightbox preview
+
+Reservation page with a form and guest selector
+
+Reusable components: Navbar, Footer, Gallery, Reservation, Menu
+
+Project Structure
+Restaurant-React/
+├─ node_modules/
+├─ public/
+├─ src/
+│  ├─ assets/images/      # All images used in the website
+│  ├─ components/         # Navbar.jsx, Footer.jsx, Gallery.jsx, Reservation.jsx, Menu.jsx
+│  ├─ pages/              # Home.jsx, About.jsx, etc.
+│  └─ main.jsx            # App entry point
+├─ package.json
+├─ vite.config.js
+├─ index.html
+└─ README.md
+
+Installation & Running Locally
+
+Clone the repository:
+git clone https://github.com/BhoomiBliss/Restaurant-Website.git
+cd Restaurant-Website
+
+
+Install dependencies:
+npm install
+
+
+Run the development server:
+npm run dev
+
+
+Open your browser at the given local URL (e.g., http://localhost:5173)
+
+Usage
+Navigate through Home, About, Menu, Gallery, Events, and Reservation pages using the Navbar
+View the Gallery images and click to open in a lightbox
+Fill the Reservation form with name, email, mobile number, date, time, and number of guests
+Footer provides quick links, contact info, and social media links
+
+Technologies Used
+React (Frontend library)
+Vite (Development server & build tool)
+JavaScript (Interactive features)
+CSS (Styling components)
+Git & GitHub (Version control)
