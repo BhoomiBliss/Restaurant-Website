@@ -34,11 +34,6 @@ The website includes:
 
 ---
 
-## 🗂️ Project Structure
-
-Restaurant-React/ ├─ node_modules/ ├─ public/ ├─ src/ │  ├─ assets/images/        # All images used in the website │  ├─ components/           # Navbar.jsx, Footer.jsx, Gallery.jsx, Reservation.jsx, Menu.jsx │  ├─ pages/                # Home.jsx, About.jsx, Events.jsx, etc. │  └─ main.jsx              # Application entry point ├─ package.json ├─ vite.config.js ├─ index.html └─ README.md
-
----
 
 ## 🛠️ Installation & Running Locally  
 
