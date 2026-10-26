@@ -7,7 +7,7 @@ import {
   Post,
 } from "@nestjs/common";
 import { IsEmail, IsInt, IsISO8601, IsOptional, IsString, Max, MaxLength, Min, MinLength } from "class-validator";
-import { DatabaseService } from "./database.service";
+import { DatabaseService } from "./database.service.js";
 
 class ReservationDto {
   @IsString() @MinLength(2) @MaxLength(80) name!: string;

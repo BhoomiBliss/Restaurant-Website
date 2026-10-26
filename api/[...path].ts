@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import type { NestExpressApplication } from "@nestjs/platform-express";
-import { createApp } from "../backend/src/main";
+import { createApp } from "../dist-backend/main.js";
 
 let appPromise: Promise<NestExpressApplication> | undefined;
 

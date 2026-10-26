@@ -35,3 +35,4 @@ backend/tsconfig.tsbuildinfo
 *.njsproj
 *.sln
 *.sw?
+/dist-backend
