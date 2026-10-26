@@ -14,7 +14,7 @@ body {
 /* HERO SECTION */
 .hero {
   height: 65vh;
-  background-image: url("/images/pic42.webp");
+  background-image: url("../images/pic42.webp");
   background-size: cover;
   background-position: center;
   position: relative;

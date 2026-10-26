@@ -1,119 +1,58 @@
-import React from "react";
-import logo from "../assets/images/logo.jpg";
+import { useState } from "react";
 import Footer from "../components/Footer";
-const Contact = () => {
-  const msg = () => {
-    alert("Message sent successfully!");
-  };
+
+const API_BASE = import.meta.env.VITE_API_URL || "";
+
+export default function Contact() {
+  const [status, setStatus] = useState({ kind: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatus({ kind: "", message: "" });
+    setSubmitting(true);
+    const form = event.currentTarget;
+
+    try {
+      const response = await fetch(`${API_BASE}/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.message || "We couldn't send your message. Please try again.");
+      form.reset();
+      setStatus({ kind: "success", message: "Thanks for getting in touch. Your message has been received." });
+    } catch (error) {
+      setStatus({ kind: "error", message: error.message || "The message service is unavailable. Please try again shortly." });
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <div>
-      <section className="cont-us">
+      <section className="cont-us active-contact">
         <div className="contact-inf">
-          <h1>Get In Touch</h1>
-          <h5>
-            If you have any questions or queries feel free to ask us, our team
-            will always be happy to help you.
-          </h5>
-          <h1>Contact Info :</h1>
-          <h5>
-            Mangaluru, Mangaluru Urban, Karnataka, 575001 <br />
-            For Reservation Call: +91 8542135895
-          </h5>
-          <h1>Connect with us</h1>
-          <div className="conn-us">
-            <p>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-facebook"></i>
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </p>
-          </div>
+          <p className="form-eyebrow">WE’RE HERE TO HELP</p>
+          <h1>Get in touch</h1>
+          <p>Questions about the menu, a celebration, or a reservation? Send us a note and we’ll get back to you.</p>
+          <h2>Visit us</h2>
+          <p>Jyothi Restaurant<br />Mangaluru, Karnataka, India</p>
+          <p className="contact-note">Call the restaurant directly for urgent booking changes.</p>
         </div>
-
-        <div className="queres">
-          <h4>WRITE TO US</h4>
-          <h2>Do you have any Questions?</h2>
-          <div className="que-inf">
-            <div className="que-name">
-              <input
-                size="1"
-                type="text"
-                className="que-name"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div className="que-email">
-              <input
-                size="1"
-                type="text"
-                className="res-sys"
-                name="Email"
-                id="Email"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div className="que-ph">
-              <input
-                size="1"
-                type="text"
-                className="res-sys"
-                name="mobile-no"
-                id="mobile-no"
-                placeholder="Phone"
-                required
-                pattern="[0-9]{5}-[0-9]{5}"
-                title="Only numbers and '-' allowed"
-              />
-            </div>
-            <div className="que-msg">
-              <input
-                size="1"
-                type="text"
-                className="res-sys"
-                name="Message"
-                id="Message"
-                placeholder="Message"
-                required
-              />
-            </div>
-            <div>
-              <button className="send" onClick={msg}>
-                Send
-              </button>
-            </div>
-          </div>
-        </div>
+        <form className="active-form active-contact-form" onSubmit={handleSubmit}>
+          <h2>Write to us</h2>
+          <label>Name<input name="name" autoComplete="name" minLength="2" maxLength="80" required /></label>
+          <label>Email<input name="email" type="email" autoComplete="email" maxLength="254" required /></label>
+          <label>Phone <span>(optional)</span><input name="phone" type="tel" autoComplete="tel" maxLength="24" /></label>
+          <label>Message<textarea name="message" rows="5" minLength="5" maxLength="2000" required /></label>
+          <button className="active-form-submit" type="submit" disabled={submitting}>{submitting ? "Sending…" : "Send message"}</button>
+          <p className="privacy-note">Your details are used to respond to your message.</p>
+          {status.message && <p className={`form-status ${status.kind}`} role="status">{status.message}</p>}
+        </form>
       </section>
-
       <Footer />
-      </div>
+    </div>
   );
-};
-
-export default Contact;
+}

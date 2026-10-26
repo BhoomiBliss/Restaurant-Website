@@ -14,7 +14,7 @@ body {
 /* Hero / Header Section */
 .hero {
   height: 55vh;
-  background-image: url("/images/pic39.jpg");
+  background-image: url("../images/pic39.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

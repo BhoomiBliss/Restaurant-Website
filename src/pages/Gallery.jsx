@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 // Import images
-import logo from "../assets/images/logo.jpg";
 import logo1 from "../assets/images/logo1.jpeg";
 import pic2 from "../assets/images/pic2.jpg";
 import pic3 from "../assets/images/pic3.jpg";

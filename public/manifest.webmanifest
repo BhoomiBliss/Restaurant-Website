@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "Jyothi Restaurant",
+  "short_name": "Jyothi",
+  "description": "Explore the Jyothi Restaurant menu and request a table reservation.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f6f1e4",
+  "theme_color": "#254b36",
+  "icons": [
+    {
+      "src": "/icons/jyothi.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

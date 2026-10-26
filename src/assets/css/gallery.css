@@ -13,7 +13,7 @@ body {
 /* HERO */
 .hero {
   height: 55vh;
-  background-image: url("images/hero1.jpg");
+  background-image: url("../images/hero1.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
