@@ -11,6 +11,19 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+!.env.example
+.vercel
+android/.gradle
+android/local.properties
+android/app/build
+android/build
+android/app/src/main/assets/public
+android/app/src/main/assets/capacitor.config.json
+backend/dist-backend
+backend/tsconfig.tsbuildinfo
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +35,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+/dist-backend
