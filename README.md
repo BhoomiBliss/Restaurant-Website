@@ -1,114 +1,24 @@
-# 🍽️ Jyothi Restaurant Website  
+# Jyothi Restaurant — frontend demo
 
-A modern, elegant, and fully responsive restaurant website built using **React + Vite**.  
-This project represents a complete front-end restaurant solution featuring beautifully designed pages, reusable components, and interactive UI elements.
+A React and Vite website concept with restaurant pages, menu and gallery views, and a reservation form. The repository is a frontend demo; reservation entries are not connected to a backend or stored as bookings.
 
-It showcases core frontend development skills including component-based architecture, routing, responsive design, and clean project structuring — making it a strong portfolio-ready project.
+## Included
 
----
+- Home, about, menu, gallery, and events pages
+- Page navigation and responsive layouts
+- Gallery preview and reservation form UI
 
-## ✨ Live Project Overview  
+## Run locally
 
-The website includes:
+From the repository root, use Node.js and npm:
 
-- 🏠 Home page with hero section and introduction  
-- ℹ️ About page with restaurant story and details  
-- 🍴 Menu page with food items and images  
-- 🖼️ Gallery page with image grid and lightbox preview  
-- 🎉 Events page for special occasions  
-- 📅 Reservation page with interactive booking form  
-- 🔗 Navigation bar for smooth page routing  
-- 📌 Footer with quick links, contact info & social media  
-
----
-
-## 🚀 Project Features  
-
-- ⚛️ Built using React with Vite for fast development  
-- 📱 Fully responsive design (Mobile + Tablet + Desktop)  
-- 🧩 Reusable components (Navbar, Footer, Gallery, Menu, Reservation)  
-- 🖼️ Interactive gallery with lightbox preview  
-- 📝 Functional reservation form with guest selector  
-- 🎨 Clean and modern UI styling  
-- 🗂️ Well-structured folder architecture  
-
----
-
-
-## 🛠️ Installation & Running Locally  
-
-### 1️⃣ Clone the Repository
-
-git clone https://github.com/BhoomiBliss/Restaurant-Website.git� cd Restaurant-Website
-
-### 2️⃣ Install Dependencies
-
+```bash
 npm install
-
-### 3️⃣ Start Development Server
-
 npm run dev
+```
 
-Open your browser and visit the local URL shown in the terminal (usually:  
-👉 http://localhost:5173)
+Vite prints the local URL in the terminal. These documented commands have not been run as part of this README update.
 
----
+## Stack
 
-## 💡 How to Use  
-
-- Navigate through pages using the Navbar  
-- Browse menu items with images  
-- View gallery images and click to preview in lightbox  
-- Fill out the reservation form with:
-  - Name  
-  - Email  
-  - Mobile number  
-  - Date  
-  - Time  
-  - Number of guests  
-- Use the footer for quick navigation and social media links  
-
----
-
-## 🧑‍💻 Technologies Used  
-
-- **React** – Frontend library  
-- **Vite** – Fast development & build tool  
-- **JavaScript (ES6+)** – Interactive functionality  
-- **CSS** – Styling and layout  
-- **Git & GitHub** – Version control  
-
----
-
-## 📌 Learning Outcomes  
-
-This project demonstrates:
-
-- Component-based architecture in React  
-- Project structuring best practices  
-- State handling in forms  
-- Reusable UI components  
-- Responsive web design  
-- Clean UI/UX design principles  
-
----
-
-## 🌟 Future Enhancements  
-
-- Backend integration for real reservation storage  
-- Admin dashboard for managing bookings  
-- Authentication system  
-- Online ordering system  
-- Payment gateway integration  
-
----
-
-## 👩‍💻 Author  
-
-**Bhoomika S Shetty**  
-Engineering Student | Aspiring Software Developer  
-Passionate about Full Stack Development & AI  
-
----
-
-⭐ If you like this project, consider giving it a star on GitHub!
+React, Vite, JavaScript, and CSS. No live deployment link is configured in the repository.
